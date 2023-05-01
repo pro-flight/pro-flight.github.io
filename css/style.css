@@ -58,6 +58,7 @@ a {
 /* Header */
 
 .logo {
+  font-size: smaller;
   font-family: 'IBM Plex Sans', sans-serif;
   color: #fff;
   padding-right: 50px;
