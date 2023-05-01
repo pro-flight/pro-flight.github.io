@@ -58,7 +58,6 @@ a {
 /* Header */
 
 .logo {
-  font-size: 12px;
   font-family: 'IBM Plex Sans', sans-serif;
   color: #fff;
   padding-right: 50px;
@@ -231,11 +230,20 @@ footer {
 
 @media(max-width: 675px) {
   body {
-    grid-template-rows: 100px 1fr 25px;
+    grid-template-rows: 80px 1fr 25px;
   }
 
   header .flex {
     flex-direction: column;
     gap: 5px;
+  }
+
+  .logo {
+    font-size: 24px;
+    padding-right: 0px;
+  }
+
+  footer {
+    font-size: 14px;
   }
 }
