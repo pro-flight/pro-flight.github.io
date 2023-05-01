@@ -1,0 +1,240 @@
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Open+Sans:wght@300&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.5;
+  display: grid;
+  grid-template-rows: 50px 1fr 25px;
+  gap: 20px;
+  min-height: 100vh;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 20px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.head {
+  font-family: 'IBM Plex Sans', sans-serif;
+  text-align: center;
+}
+
+.desc {
+  text-align: center;
+}
+
+/* Header */
+
+.logo {
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: #fff;
+  padding-right: 50px;
+}
+
+.highlight{
+  color: #05131c;
+  font-weight: bolder;
+}
+
+.logo-light {
+  font-weight: lighter;
+}
+
+nav {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+header, footer {
+  background-color: #75b9e6;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav a {
+  font-size: larger;
+  font-weight: bolder;
+  color: #fff;
+  padding: 0 10px;
+}
+
+.current-page {
+  color: #05131c;
+}
+
+.page-link:hover {
+  color: #05131c;
+}
+
+/* Footer */
+
+footer {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: bolder;
+  color: #fff;
+}
+
+/* Hero */
+
+.hero {
+  background-color: blueviolet;
+  height: 300px;
+  width: 100%;
+}
+
+/* Product cards */
+
+.card-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  width: 250px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  color: #000;
+}
+
+.card-img {
+  width: 200px;
+  height: auto;
+  padding-bottom: 5px;
+}
+
+.card-header {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: bolder;
+  font-size: 16px;
+  text-align: center;
+}
+
+.card-lead {
+  font-size: 15px;
+  text-align: center;
+}
+
+.card:hover {
+  color: #75b9e6;
+}
+
+/* Services */
+
+.services-holder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.services-holder-reverse {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.services-img {
+  width: 350px;
+  height: auto;
+  padding-bottom: 5px;
+}
+
+.services-desc-left {
+  text-align: left;
+}
+
+.services-desc-right {
+  text-align: right;
+}
+
+/* About */
+
+.team-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-img {
+  width: 250px;
+  padding-bottom: 5px;
+}
+
+.team-desc {
+  text-align: center;
+}
+
+@media(max-width: 900px) {
+  .services-holder {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .services-holder-reverse {
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+  }
+
+  .services-desc-left {
+    text-align: center;
+  }
+  
+  .services-desc-right {
+    text-align: center;
+  }
+  
+}
+
+@media(max-width: 675px) {
+  body {
+    grid-template-rows: 100px 1fr 25px;
+  }
+
+  header .flex {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
